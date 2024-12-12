@@ -1,0 +1,218 @@
+header{ 
+    background:#E6F2FF; padding:50px;
+}
+
+header small{
+    color: black;
+}
+
+nav{ background: #E6F2FF; padding: 50px 50px 0px 50px;
+    display: flex; color: #E06800; justify-content: space-between; align-items: center;
+}
+.brown-btn{ border-radius: 30px; padding: 10px 30px; 
+    background: #E06800; color: white; font-size: 18px; border: none;
+}
+nav h2{
+    font-size:48px;
+}
+header h1{ 
+    font-size:48px;
+    color: #023047;
+}
+.head-inp-div{
+    display: flex ;
+}
+
+button:focus{
+    opacity: 0.8;
+}
+.startInp{    width: 350px; height: 50px;
+    border: #E06800 solid; 
+     border-radius: 30px 0px 0px 30px;
+      box-sizing: border-box;
+}
+#sign-up-btn, #head-btn{ height: 50px;
+    border-radius:0px 30px 30px 0px ;
+}
+input{
+    padding:20px; font-size: 20px;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.startInp input{ background: transparent; width:65%;  }
+    .startInp button{ border-radius: 0px 30px 30px 0px;
+        background:#E06800; width: 35%;
+    }
+    .subText{
+        width: 50%;
+    }
+    .subText small{ font-size: 18px;
+        display: block; margin-bottom: 30px;
+    }
+    /* header{
+        padding-left: 50px 0px 50px 50px;
+    } */
+    header p{color: black;
+        display: flex; align-items: center;
+    }
+    p img{
+        margin-left: 10px;
+    }
+    
+.feature{ padding: 70px;
+    background: radial-gradient(circle, #E6F2FF,#005FAE );
+}
+.featureGrid{
+    gap: 20px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.featureGrid>div{ background: #00A3E0; 
+     color: white;
+    border-radius: 20px; padding: 20px; 
+}
+.featureGrid h5{ margin: 0;
+    font-size: 25px;
+}
+.featureGrid p{
+ font-size: 18px;
+}
+.featureGrid small{
+    font-size: 18px; color:#E06800 ;
+}
+.featureGrid>div span{ padding: 0; display: flex; align-items: center;
+
+}
+.featureGrid span img{
+margin: 0px 10px 10px 0px;
+}
+.feature>span{  margin-top: 30px; 
+display: flex; justify-content: center;
+}
+
+
+    .feat-card{ padding: 20px 0px; 
+        background:#E6F2FF ; display: flex; flex-direction: column; align-items: center;
+    gap: 40px;
+    }
+    .feat-card h3{
+        font-size: 32px; color: #005FAE;
+    }
+    .feat-card>span{
+        margin-top: 30px; 
+        display: flex; justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+
+
+.feature-card-grid{
+    margin-top: 20px;
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+}
+.feature-card-grid>div{ padding: 30px;
+    border-radius: 30px;
+    background:#00A3E0;
+}
+.feature-card-grid>div h5{
+    font-size: 24px;
+}
+.feature-card-grid>div p{
+    font-size: 18px;
+}
+
+
+.testimonial{ background: radial-gradient(circle, #E6F2FF,#005FAE );
+    padding: 50px;
+}
+.testimonial-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.testimonial>h3{
+    color: #005FAE; text-align: center; font-size: 32px;
+}
+.testimonial-grid>div{ border-radius: 30px; padding: 20px;
+    display: flex; flex-direction: column; justify-content :space-between ;
+    background: #00A3E0;
+}
+.testimonial-grid>div span{
+    display: flex; align-items: center; gap: 30px;
+}
+.testimonial-grid>div h6{ margin: 0;
+    font-size: 20px;
+}
+.test-img{
+    border-radius: 50%;
+}
+
+
+body{
+    color: white; 
+}
+.FAQ{ display: flex; flex-direction: column; align-items:center ;
+    background: #E6F2FF; padding-bottom: 100px; margin: 0;
+}
+.FAQ ul{ width: 80%; 
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+
+}
+.FAQ li img{
+height: 7px; width: 11px     ; 
+}
+.FAQ h3{text-align: center;color: #005FAE; 
+font-size: 48px; }
+li{
+font-size: 18px;
+}
+.FAQ li{ padding: 25px;
+    background: #1E3A8A; display: flex; justify-content: space-between
+;
+  border-radius: 10px;
+}
+
+
+.sign-up p{
+    font-size: 18px;
+}
+.sign-up{margin: 0; padding: 20px; padding: 40px;
+    background: #00A3E0; display: flex; 
+    justify-content: space-between;
+}
+
+.sign-up h2{ margin: 0;
+    color: #005FAE; font-size: 48px;
+}
+footer{
+    background: #1E3A8A; color: rgba(226, 209, 209, 0.973); padding-bottom: 60px;
+}
+    footer div{
+       display: flex; justify-content: space-around;
+    }
+    footer>ul{
+        display: flex; justify-content: space-around;
+    }
+    footer>div li{
+        margin-bottom: 20px;
+    }
+    footer h4{
+        font-size: 24px;
+    }
+
+    .foot-base{
+        color: #F2F2F2;
+    }
+    
+            li{
+                list-style-type: none;
+            }
+           
