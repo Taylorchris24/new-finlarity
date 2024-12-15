@@ -1,12 +1,14 @@
-header{ 
-    background:#E6F2FF; padding:50px;
+header{ margin: 0px;
+    background:#E6F2FF; padding:50px;box-sizing: border-box;
 }
-
+/* *{
+    border:solid;
+} */
 header small{
     color: black;
 }
 
-nav{ background: #E6F2FF; padding: 50px 50px 0px 50px;
+nav{ background: #E6F2FF; padding-bottom:30px ;
     display: flex; color: #E06800; justify-content: space-between; align-items: center;
 }
 .brown-btn{ border-radius: 30px; padding: 10px 30px; 
@@ -15,6 +17,13 @@ nav{ background: #E6F2FF; padding: 50px 50px 0px 50px;
 nav h2{
     font-size:48px;
 }
+.header{
+    display: flex; justify-content: space-between; align-items:center
+     ;margin-bottom:50px;
+}
+header>img{
+    width: 400px; height: 400px;
+ }
 header h1{ 
     font-size:48px;
     color: #023047;
@@ -142,6 +151,9 @@ display: flex; justify-content: center;
 .testimonial-grid>div{ border-radius: 30px; padding: 20px;
     display: flex; flex-direction: column; justify-content :space-between ;
     background: #00A3E0;
+}
+.testimonial-grid>div>img{
+    height: 32px; width: 160px;
 }
 .testimonial-grid>div span{
     display: flex; align-items: center; gap: 30px;

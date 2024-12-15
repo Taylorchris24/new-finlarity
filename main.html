@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <style>
+            .brown-btn{ border-radius: 30px; padding: 10px 30px; 
+    background: #E06800; color: white;
+     font-size: 16px; border: none; height: 40px;
+       }
+            body{ margin:0px 20px;
+                background:#E6F2FF; height: 100vh;
+            }
+            .navbar2 div{
+                display: flex; align-items: center;
+                 justify-content: space-between; margin: 0px;
+            }
+            .navbar2 a{
+                font-size: 20px; text-decoration: none;
+                font-weight: 400;
+            }
+            .navbar2 a:hover{
+                opacity: 0.7;
+            }
+            button:focus{
+                opacity: 0.6;
+            }
+            .navbar2 ul{ 
+                display: flex; gap: 40px; list-style-type: none;
+            }
+            .navbar2 p{ color: #005FAE; text-align: center;
+            background: #23b6ec71; padding: 15px; font-size: 20px;
+            }
+          
+            .navbar2{  margin: 0;
+                border-bottom: solid rgba(0, 0, 0, 0.106) 2px;
+            }
+            .navbar2 li{
+                cursor: pointer;
+            }
+            .nav-active{
+                color:blue; border-bottom: solid blue 1px; padding-bottom: 5px;
+    
+            }
+            .active{
+                color:black;  
+            }
+           
+            .home{ height: 20vh;
+              padding-bottom: 0px;
+            }
+            .home p{
+                margin-top: 20px;
+            }
+
+            .main{
+                   background: #ffff; height: 70vh; width: 80%; 
+                   margin:20px 10%;
+                   margin-bottom: 50px;
+                border-radius: 15px;
+                padding: 0px 40px;
+            }
+            .subMain1{    padding: 20px;
+                display: flex;
+                justify-content: space-between; 
+            }
+    
+        .subMain1 span{ 
+            display: flex; align-items: center;
+            gap: 20px;            
+        }
+        .subMain1-img1{
+            height:50px; width: 50px;
+        }
+        .subMain1 h4{
+            margin: 0;
+        }
+        .main p{
+            margin-bottom: 30px;
+        }
+       .homeSection{  display: flex; justify-content: center; gap: 20px;
+       }
+       .homeSection>div{  display: flex; flex-direction: column; justify-content: space-between;
+        width: 30%; height: 300px;padding: 30px; box-sizing: border-box; border-radius: 20px;
+        border: solid rgba(0, 0, 0, 0.263) 1px;
+       }
+       .homeSection>div:hover{
+        background:#005FAE;color: white;
+       }
+       .homeSection>div>img{
+        height: 90px; width: 90px;
+       }
+
+       body{
+            font-family: Lora;
+        }
+      .expenses{
+        display: flex; justify-content: space-between;
+      }
+      .expenses button{
+        margin-top: 20px;
+      }
+        .expenses img{
+            height: 80%;
+        }
+        .expenses h2{
+            color: #023047; font-size: 32px;
+        }
+        .subMain2{
+            display: flex; justify-content: center; gap: 20px;
+        }
+            .subMain2 div{ border-radius: 30px; 
+            padding: 20px; box-sizing: border-box;
+            height: 284px; width: 285px;
+             border: solid rgba(0, 0, 0, 0.116) 1px;
+        }
+        .subMain2 div img{ margin-left: 150px;
+            height: 100px; width: 100px;
+        }
+
+        .color{
+            color: purple;
+         
+        }
+
+
+        .hidden{
+         display: none;
+        }
+         </style>
+    <section class="home">
+<div class="navbar2">
+    <p>Simplify your finances, gain insights, and achieve your goals with clarity and confidence</p>
+    <div>
+        <img src="./assets/landing-Img/Logo (1).png" alt="">
+        <ul>
+            <li> <a href="#"  data-target="home" class="nav-active">Home</a> </li>
+            <li><a href="#" data-target="expenses"> Expenses</a> </li>
+            <li> <a href="#" data-target="reports"> Reports </a> </li> 
+            <li><a href="#"  data-target="insights">Insights  </a> </li>
+            <li> <a href="#"  data-target="contact">Contact Us  </a>  </li>
+        </ul>
+        <button class="brown-btn">Sign Out</button>
+    </div>
+</div>
+    </section>
+
+    <section class="main">
+        <div class="subMain1">
+            <span>
+                <img src="./assets/home-img/Frame 50.png" class="subMain1-img1">
+                <h4 style="font-size: 30px; color: black;">FinBot</h4>
+            </span>
+
+            <span>
+                <button class="brown-btn"><img src="./assets/home-img/Vector (3).png" > Watch Demo</button>
+                <img src="./assets/home-img/Chevron-Down--Streamline-Font-Awesome.png" height="20px" width="20px">
+            </span>
+
+        </div>
+        <p id="main-paragraph">Are you here to set up FinClarity for your business, or just yourself?</p>
+        <!-- home -->
+        <div id="home" class="section homeSection  active">
+
+            <div>
+                <img src="./assets/home-img/Small Business.png" alt="">
+                <h4>Business</h4>
+                <p>
+                    Send invoices, pay bills and manage employee expenses. Get FinClarity card and say goodbye to receipts.</p>
+            </div>
+            <div>
+                <img src="./assets/Money Box.png" alt="">
+                <h4>Individual</h4>
+                <p> Track receipts for taxes, send invoices and submit expenses to your accountant or employer.</p>   
+                </div>
+        </div>
+
+        <!-- expenses -->
+         <div id="expenses" class="section expenses hidden">
+            <div >
+                <h2>Ready to AutoScan your first <br> receipt?</h2>
+                <button class="brown-btn">Upload Receipt</button>
+            </div>
+            <img src="./assets/home-img/Frame 132 (1).png" alt="">
+         </div>
+        
+    
+    </section>
+
+    <section class="feature">
+        <h3 style="text-align: center; font-size: 32px; color:#124772;">Features</h3>
+        <div class="featureGrid">
+            <div>
+                <span>
+                    <img src="./assets/Report Card.png" alt="">
+                    <h5>Expense reports</h5>
+                </span>      
+                <p>View all expenses submitted for reimbursement in one place. Approve with a single click.</p> 
+                <small>Learn More</small>   
+            </div>
+
+            <div>
+                <span>
+                    <img src="./assets/Coins.png" alt="">
+                    <h5>Spend management</h5>
+                </span>
+                <p>Manage expenses, vendors, and invoices. Analyze spending trends and forecast budgets.</p>
+
+                <small>Learn More</small>            
+            </div>
+
+            <div>
+                <span>
+                    <img src="./assets/Money Transfer.png" alt="">
+                    <h5>Bill pay</h5>
+                </span>
+                <p>Automate approvals and payments. Track what’s paid, what’s due, and what’s late.</p>
+                <small>Learn More</small>            
+            </div>
+
+            <div>
+                <span>
+                    <img src="./assets/System Information.png" alt="">
+                    <h5>Integrations</h5>
+                </span>
+                <p>Integrates with PayPal, Bank of America, Stripe, and 45+ more.</p>
+                <small>Learn More</small>            
+            </div>
+
+            <div>
+                <span>
+                    <img src="./assets/Money Box.png" alt="">
+                    <h5>Personal expenses</h5>
+                </span>
+                <p>Manage personal expenses. Track receipts, request and send money, and more.</p>
+                <small>Learn More</small>            
+            </div>
+
+            <div>
+                <span>
+                    <img src="./assets/Receipt.png" alt="">
+                    <h5>Receipt tracking</h5>
+                </span>
+                <p>Scan receipts via mobile app and auto-record vendor, date, and amount.</p>
+                <small>Learn More</small>            
+            </div>
+
+
+        </div>
+
+        <span>
+            <button class="brown-btn" style="text-align: center;">See All Features</button>
+        </span>
+       
+
+    </section>  
+
+
+
+    <main class="feat-card">
+        <h3>How FinClarity’s free trial works</h3>
+        
+        <div>
+            <span class="brown-btn">For Employees</span>
+            <span class="brown-btn" style="color: black; background-color:transparent; border:solid 1px #E06800;">For Business Owners</span>
+            <span class="brown-btn" style="color: black; background-color:transparent; border:solid 1px #E06800;">For Finance/Accounting</span>
+        </div>
+
+        <div class="feature-card-grid">
+            <div>
+                <img src="./assets/landing-Img/Rescan Document.png" alt="">
+                <h5> Add Expense</h5>
+                <p>
+                    Upload your first receipt with the mobile app, drag-and-drop on the web, or forward it to receipts@finclarity.com.</p>
+            </div>
+            <div>
+                <img src="./assets/landing-Img/Terms and Conditions.png" alt="">
+                <h5>Create Report</h5>
+                <p>
+                    Automatically generate expense reports for reimbursement or reconciliation. Add categories, tags, and comments, then submit.</p>
+            </div>
+            <div>
+                <img src="./assets/landing-Img/Paper Plane.png" alt="">
+                <h5>Get Reimbursed</h5>
+                <p>Once approved, get reimbursed directly to your bank account in as little as one business day.
+                </p>
+            </div>
+        </div>
+
+        <span>
+            <button class="brown-btn ">Get Started</button>
+        </span>
+
+    </main>
+   
+        <section class="testimonial">
+            <h3>What Users Have To Say</h3>
+        
+            <div class="testimonial-grid">
+                <div>
+                    <img src="./assets/landing-Img/Star rating.png" alt="">
+                    <h6> “The easiest expense tool I've ever used.”</h6>
+                    <p> “It is very easy, as soon as you get a receipt you can scan it, the AI will capture all relevant information and it is very little interaction to get to the final submission of the expense. It is so easy!!!”
+                    </p>
+                    <span><img class="test-img" src="./assets/landing-Img/Frame 17.png" alt="">     Udo K.</span>
+                </div>
+                <div>
+                    <img src="./assets/landing-Img/Star rating.png" alt="">
+                    <h6>“Great Program!”</h6>
+                    <p>
+                        “Finclarity has a great UI interface and is very intuitive to use. I particularly like the functionality of taking a picture of a receipt and having it uploaded to my account. I also like that I can send an email and the smart-scanner puts it into my expenses.”
+                     </p>
+                    <span><img class="test-img" src="./assets/landing-Img/image 3.png" alt=""> Sambo M. </span>
+                </div>
+                <div>
+                    <img src="./assets/landing-Img/Star rating.png" alt="">
+                    <h6>“Simple, Straight-forward Expenses!”</h6>
+                    <p> “I've never met someone that enjoys doing their expenses. Following business trips or even a few weeks in the office, the last thing that someone wants to do is take time out of their day/week to sort through, and enter receipts. Finclarity makes the process easier by prompting you to auto-import expenses as you go, and their
+                    </p>
+                    <span><img class="test-img" src="./assets/image 1.png" alt="">Nzelu D. </span>
+                </div>
+            </div>
+
+        </section>
+    
+        <section class="FAQ">
+            <h3>FAQ</h3>
+            <ul>
+                <li>
+                    <span> What is FinClarity?</span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> What does FinClarity integrate with?</span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> Who is FinClarity for? </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> How do I upload expenses?  </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> What kind of expenses can I track? </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> Can I use FinClarity if my company doesn’t use it? </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> How much does it cost? </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> How do I get started?  </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> How quickly can I get the setup?   </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+                <li>
+                    <span> Can FinClarity help with compliance?   </span>
+                    <img src="./assets/Vector (2).png">
+                </li>
+            </ul>
+        </section>
+      
+    <section class="sign-up">
+        <div >
+            <h2> Ready to simplify your receipt <br> and expense management <br> process?</h2>
+            <p>Enter your email or phone number to make your company's money go further with FinClarity's <br> time-saving spend management tools.
+            </p>
+        </div>
+
+        <form action="">
+            <span class="head-inp-div">
+              <input type="text" class="startInp" style="color: white; background: inherit;" placeholder="Enter your email or phone number">
+              <button id="sign-up-btn" class="brown-btn">Get Started</button>
+            </span>
+            <div style="display: flex; align-items: center;gap: 10px; margin-top: 10px;" ><span>Or get started with</span> <img src="./assets/Google-Icon--Streamline-Svg-Logos.png" alt=""></label>
+        </form>
+    </section>
+
+        <footer>
+            <div>
+            <ul>
+                <li><h4>Features</h4></li>
+                <li>Expense Report</li>
+                <li>Receipt Tracking</li>
+                <li>Bill Pay</li>
+                <li>Personal Expense</li>
+                <li> Integrations</li>
+                <li>Spend Management</li>
+            </ul>
+            <ul>
+                <li><h4> Resources</h4></li>
+                <li>FinClarityApproved!</li>
+                <li>Support </li>
+                <li>FinClarity Help</li>
+                <li>Press Kit</li>
+                <li>Terms of Service</li>
+                <li>Privacy</li>
+            </ul>
+            <ul>
+                <li><h4>Learn More</h4></li>
+                <li>About FinClarity</li>
+                <li>  Blog</li>
+                <li>FinClarity.org</li>
+                <li>Investor Relations</li>
+                <li><img src="./assets/landing-Img/Social Media icons.png" alt=""></li>
+               
+            </ul>
+            <ul>
+                <li><h4>Get Started</h4></li>
+                <li>Create a new account</li>
+                <li>Log in</li>
+                <li><small>@ 2024 FinClarity, Inc</small> </li>
+                <li><img src="./assets/landing-Img/Frame 131 (1).png" alt=""></li>
+               
+            </ul>
+        </div>
+            <small style="display: block; text-align: center; margin-top: 60px;">Money transmission is provided by Expensify Payments LLC (NMLS ID:2017010) pursuant to its licenses.</small>
+        </footer>
+        <script src="./main.js"></script>
+</body>
+</html>
